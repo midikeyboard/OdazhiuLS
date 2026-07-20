@@ -71,9 +71,9 @@ def run_music_show():
 
                         random_lights = random.choice(LIGHT_COMBOS)
 
-                        bmw.job("LSZ_2", "STEUERN_IO", random_lights)
+                        bmw.job("LSZ", "STEUERN_IO", random_lights)
                         time.sleep(0.03)
-                        bmw.job("LSZ_2", "DIAGNOSE_ENDE")
+                        bmw.job("LSZ", "DIAGNOSE_ENDE")
 
                         time.sleep(COOLDOWN)
 
@@ -85,7 +85,7 @@ def run_music_show():
         print("\n\n The music show has been stopped.")
         try:
             with PyDIABAS() as bmw:
-                bmw.job("LSZ_2", "DIAGNOSE_ENDE")
+                bmw.job("LSZ", "DIAGNOSE_ENDE")
         except:
             pass
     except Exception as e:
@@ -96,7 +96,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 2 and sys.argv[1].lower() == "stop":
         try:
             with PyDIABAS() as bmw:
-                bmw.job("LSZ_2", "DIAGNOSE_ENDE")
+                bmw.job("LSZ", "DIAGNOSE_ENDE")
         except:
             pass
         sys.exit(0)

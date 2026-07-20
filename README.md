@@ -12,7 +12,7 @@ A software tool developed with Visual Basic (GUI) and Python (backend) for contr
 - **Music Light Show:** Real-time light synchronization using microphone input to detect bass.
 
 ### Current Status
-- System is fully tested and operational on **LSZ modules** (e.g., BMW E46(2002+)).
+- System is fully tested and operational on **LSZ modules** (e.g., BMW E46(pre-lci)).
 - The graphical user interface and Python backend are under active development.
 
 ### Roadmap
